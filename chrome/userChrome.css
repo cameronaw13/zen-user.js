@@ -46,4 +46,9 @@
   #PanelUI-menu-button {
     padding-inline-end: var(--toolbarbutton-outer-padding) !important;
   }
+
+  /* Big Tab Scrollbar */
+  #zen-tabs-wrapper {
+    scrollbar-width: auto;
+  }
 }

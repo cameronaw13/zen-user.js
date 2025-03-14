@@ -1,0 +1,25 @@
+@-moz-document url-prefix("chrome:") {
+  /* Fullscreen Bookmark Bar */
+  :root[inFullscreen] #PersonalToolbar {
+    visibility: visible !important;
+  }
+  
+  /* Wide toolbar (multi-toolbar style) */
+  /*#nav-bar {
+    position: fixed !important;
+  }
+  :root[sizemode="normal"] #nav-bar {
+    left: calc(var(--zen-toolbar-height) + var(--zen-border-radius)) !important;
+    width: calc(100% - var(--zen-toolbar-height) - 2 * var(--zen-border-radius)) !important;
+  }
+  :root:not([sizemode="normal"]) #nav-bar {
+    left: calc(var(--zen-border-radius)) !important;
+    width: calc(100% - 2 * var(--zen-border-radius)) !important;
+  }
+  #zen-tabbox-wrapper {
+    margin-top: var(--zen-toolbar-height) !important;
+  }
+  #zen-sidebar-splitter {
+    top: var(--zen-toolbar-height) !important;
+  }*/
+}

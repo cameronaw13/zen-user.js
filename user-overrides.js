@@ -69,4 +69,3 @@ user_pref("zen.view.show-newtab-button-top", false);
 user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
 user_pref("zen.theme.gradient.show-custom-colors", true);
 user_pref("zen.theme.gradient", false);
-user_pref("browser.profiles.enabled", true); // temp

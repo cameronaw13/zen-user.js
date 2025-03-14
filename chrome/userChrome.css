@@ -4,22 +4,46 @@
     visibility: visible !important;
   }
   
-  /* Wide toolbar (multi-toolbar style) */
-  /*#nav-bar {
-    position: fixed !important;
+  /* Full Width Toolbar */
+  :root:not([zen-single-toolbar="true"]) {
+    #nav-bar {
+      position: fixed !important;
+      left: 6px;
+      width: calc(100% - 2 * 6px);
+    }
+    #zen-tabbox-wrapper,
+    #zen-sidebar-splitter,
+    &:root[zen-sidebar-expanded="true"] #navigator-toolbox {
+      margin-top: var(--zen-toolbar-height) !important;
+    }
+    &:root[zen-sidebar-expanded="true"] #zen-sidebar-top-buttons {
+      display: none !important;
+    }
+    #PersonalToolbar {
+      position: relative;
+      top: var(--zen-toolbar-height);
+      width: calc(100% - var(--zen-border-radius));
+    }
   }
-  :root[sizemode="normal"] #nav-bar {
-    left: calc(var(--zen-toolbar-height) + var(--zen-border-radius)) !important;
-    width: calc(100% - var(--zen-toolbar-height) - 2 * var(--zen-border-radius)) !important;
+  
+  /* Small Flexible Space */
+  [id*="customizableui-special-spring"] {
+    max-width: calc(var(--zen-toolbar-height) - 2px) !important;
   }
-  :root:not([sizemode="normal"]) #nav-bar {
-    left: calc(var(--zen-border-radius)) !important;
-    width: calc(100% - 2 * var(--zen-border-radius)) !important;
+  
+  /* Neat Bookmarks Menu */
+  #BMB_viewBookmarksSidebar,
+  #BMB_searchBookmarks,
+  #BMB_bookmarksShowAllTop,
+  #BMB_bookmarksShowAll,
+  #BMB_viewBookmarksToolbar,
+  #BMB_bookmarksPopup > menuseparator,
+  #BMB_bookmarksToolbarPopup > menuseparator {
+    display: none;
   }
-  #zen-tabbox-wrapper {
-    margin-top: var(--zen-toolbar-height) !important;
+  
+  /* Uniform Application Menu Button Padding */
+  #PanelUI-menu-button {
+    padding-inline-end: var(--toolbarbutton-outer-padding) !important;
   }
-  #zen-sidebar-splitter {
-    top: var(--zen-toolbar-height) !important;
-  }*/
 }

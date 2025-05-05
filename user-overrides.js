@@ -15,7 +15,7 @@ user_pref("signon.rememberSignons", false); // 5003
 user_pref("browser.urlbar.suggest.history", false); // 5010
 user_pref("browser.urlbar.suggest.bookmark", false); // 5010
 user_pref("browser.urlbar.suggest.openpage", false); // 5010
-//user_pref("browser.urlbar.suggest.topsites", false); // 5010 //disabled due to zen urlbar bug
+user_pref("browser.urlbar.suggest.topsites", true); // 5010 //disabled due to zen urlbar bug
 user_pref("browser.urlbar.suggest.engines", false); // 0815
 user_pref("browser.urlbar.trimURLs", false);
 
